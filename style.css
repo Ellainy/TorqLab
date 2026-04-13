@@ -24,6 +24,7 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Custom Scrollbar */
@@ -113,7 +114,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-logo {
   width: 100%;
-  max-width: 380px;
   height: auto;
   filter: drop-shadow(0 0 30px var(--red-glow));
   transition: var(--transition);
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: 2rem !important;
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
@@ -416,7 +416,6 @@ section {
   }
   
   .hero-logo {
-    max-width: 250px;
     margin: 0 auto;
   }
   
@@ -454,5 +453,53 @@ section {
   
   .feature-item {
     padding: 0.5rem;
+  }
+}
+
+.badge-especialidade {
+  display: inline-block;
+  background: rgba(230, 57, 70, 0.15);
+  color: var(--red-primary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  margin-left: 0.75rem;
+  vertical-align: middle;
+}
+
+.card-especialista {
+  background: linear-gradient(145deg, var(--bg-card), rgba(17, 17, 17, 0.8));
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.card-especialista:hover {
+  border-color: var(--red-primary);
+  transform: translateY(-5px);
+}
+
+.card-texto-completo {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .badge-especialidade {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  
+  .d-flex.align-items-center.mb-3 {
+    flex-wrap: wrap;
+  }
+  
+  .card-especialista {
+    padding: 1.25rem;
   }
 }
