@@ -4,12 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TORQ LAB | Ciêcia e estrategia para a peformance</title>
+  <meta name="description" content="TORQ LAB - Consultoria em biomecânica e nutrição esportiva. Treinos personalizados e preparação para TAF com método científico.">
+  <meta name="keywords" content="treino, biomecânica, nutrição esportiva, TAF, performance, hipertrofia">
+  <meta name="author" content="TORQ LAB">
+  <meta name="robots" content="index, follow">
+  <title>TORQ LAB | Ciência e Estratégia para a Performance</title>
 
   <link rel="icon" href="imgs/logo.png" type="image/png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,8 +22,9 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
     <div class="container">
-      <a class="fw-bold text-decoration-none text-white h3" href="index.html"><span
-          style="color:  rgba(255, 30, 30, 0.507); text-shadow: 0 0 10px rgba(255, 24, 24, 0.459);">TORQ</span>LAB</a>
+      <a class="fw-bold text-decoration-none" href="#home">
+        <span class="logo-text">TORQ<span class="logo-red">LAB</span></span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,30 +33,29 @@
           <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fichas">Ficha de treino</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fichas">Ficha de Treino</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
-  <section id="home" class="hero-personal">
+  <!-- Header / Home -->
+  <section id="home" class="hero-section">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-md-5 text-center text-md-start">
-          <div class="foto-container">
-            <img src="imgs/logo.png" alt="Logo TORQLAB" class="logo">
+          <div class="logo-container">
+            <img src="imgs/logo.png" alt="TORQ LAB Logo" class="hero-logo" loading="eager">
           </div>
         </div>
         <div class="col-md-7">
-          <h1><span
-              style="color: rgba(255, 30, 30, 0.507); text-shadow: 0 0 10px rgba(255, 24, 24, 0.459);">TORQ</span>LAB
-          </h1>
-          <h4>Ciência e Estratégia para a Performance</h4>
-          <p class="bio">
+          <h1 class="hero-title">TORQ<span class="text-red">LAB</span></h1>
+          <h4 class="hero-subtitle">Ciência e Estratégia para a Performance</h4>
+          <p class="hero-text">
             Transformando conhecimento científico em resultados práticos.
-            Unimos <strong>biomecânica aplicada</strong> e <strong>estratégia nutricional</strong> para entregar
+            Unimos <strong class="text-red">biomecânica aplicada</strong> e 
+            <strong class="text-red">estratégia nutricional</strong> para entregar
             evolução física com inteligência, segurança e consistência.
           </p>
         </div>
@@ -60,80 +64,66 @@
   </section>
 
   <!-- Sobre -->
-  <section id="sobre" style="background: linear-gradient(145deg, #141414a6, rgba(11, 11, 11, 0.512));">
+  <section id="sobre" class="sobre-section">
     <div class="container">
+      <h2 class="section-title">AS MENTES POR TRÁS DOS MÉTODOS</h2>
       <div class="row align-items-center g-5">
-        <div class="col-lg-6 col-md-5 col-sm-12">
-          <img src="imgs/personals.jpg" alt="Especialistas TORQ LAB" class="img-fluid rounded-4"
-            style="filter: brightness(0.9); border: 1px solid #333;">
+        <div class="col-lg-6">
+          <img src="imgs/personals.jpg" alt="Equipe TORQ LAB" class="img-fluid sobre-img" loading="lazy">
         </div>
-        <div class="col-lg-6 col-md-7 col-sm-12">
-          <h2 class="fw-bold mb-4">As mentes por trás dos métodos</h2>
-
+        <div class="col-lg-6">
           <div class="row g-4">
-            <div
-              style="background: linear-gradient(145deg, #141414a6, rgba(11, 11, 11, 0.512)); border: 1px solid rgba(255, 24, 24, 0.459);;"
-              class="col-12 mb-3 p-3 rounded-4">
-              <h5 class="text-white fw-bold mb-2"><i style="color: rgba(255, 24, 24, 0.459);"
-                  class="bi bi-person-fill text-vermelho me-2"></i>Fulano, especialista em Biomecânica e TAF</h5>
-              <p class="small text-cinza mb-0">Focado na ciência do treinamento físico, com especialização em
-                Cinesiologia e Biomecânica. Experiência prática de alto nível, aprovado em um dos TAFs mais exigentes do
-                país (PMPE).</p>
+            <div class="col-12 card-especialista">
+              <h5><i class="bi bi-person-fill me-2 text-red"></i>Rafael Mendes - Biomecânica e TAF</h5>
+              <p>Especialista em Cinesiologia e Biomecânica, aprovado no TAF da PMPE. Focado na ciência do movimento para máxima eficiência e segurança.</p>
             </div>
-
-            <div
-              style="background: linear-gradient(145deg, #141414a6, rgba(11, 11, 11, 0.512)); border: 1px solid rgba(255, 24, 24, 0.459);;"
-              class="col-12 mb-4 p-3 rounded-4">
-              <h5 class="text-white fw-bold mb-2"><i style="color: rgba(255, 24, 24, 0.459);"
-                  class="bi bi-person-fill text-vermelho me-2"></i>Alan, especialista em Estratégia e Nutrição</h5>
-              <p class="small text-cinza mb-0">Pós-graduado em Nutrição Clínica Esportiva, focado no controle de
-                variáveis e hipertrofia. Especialista em unir planejamento nutricional individualizado e performance
-                sustentável.</p>
+            <div class="col-12 card-especialista">
+              <h5><i class="bi bi-person-fill me-2 text-red"></i>Alan Ferreira - Estratégia e Nutrição</h5>
+              <p>Pós-graduado em Nutrição Clínica Esportiva, especialista em hipertrofia e performance sustentável através do planejamento nutricional individualizado.</p>
             </div>
           </div>
 
-          <div class="row pt-3 border-top border-secondary">
-            <div class="col-6 mb-2"><i class="bi bi-check-circle-fill text-vermelho me-2"></i> Biomecânica Aplicada
-            </div>
-            <div class="col-6 mb-2"><i class="bi bi-check-circle-fill text-vermelho me-2"></i> Nutrição Esportiva</div>
-            <div class="col-6 mb-2"><i class="bi bi-check-circle-fill text-vermelho me-2"></i> Preparação TAF</div>
-            <div class="col-6 mb-2"><i class="bi bi-check-circle-fill text-vermelho me-2"></i> Método Científico</div>
-          </div>
-          <div class="w-100 d-flex">
-            <button type="button" style="background-color: rgba(255, 24, 24, 0.459)!important;"
-              class="btn btn-dark m-auto mt-3 p-3 rounded-4">
-              Faça já o seu orçamento!
-            </button>
+          <div class="row g-3 habilidades-box">
+            <div class="col-md-6"><i class="bi bi-check-circle-fill me-2 text-red"></i> Biomecânica Aplicada</div>
+            <div class="col-md-6"><i class="bi bi-check-circle-fill me-2 text-red"></i> Nutrição Esportiva</div>
+            <div class="col-md-6"><i class="bi bi-check-circle-fill me-2 text-red"></i> Preparação TAF</div>
+            <div class="col-md-6"><i class="bi bi-check-circle-fill me-2 text-red"></i> Método Científico</div>
           </div>
 
+          <div class="mt-4">
+            <a href="https://wa.me/5584988570860" class="btn-primary w-100 text-center" target="_blank" rel="noopener noreferrer">
+              <span>Quero fazer minha consultoria</span>
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Serviços -->
-  <section id="servicos" style="min-height: 100vh;" class="d-flex">
-    <div class="container my-auto">
+  <section id="servicos" class="servicos-section">
+    <div class="container">
       <h2 class="section-title">NOSSOS PILARES</h2>
       <div class="row g-4 justify-content-center">
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-gear-wide-connected"></i></div>
             <h3>Biomecânica</h3>
             <p>Ajuste fino do movimento para máxima ativação muscular e segurança articular.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-graph-up-arrow"></i></div>
             <h3>Alta Performance</h3>
             <p>Treinamento para hipertrofia, força e desempenho físico de elite.</p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-lg-4">
           <div class="service-card">
             <div class="service-icon"><i class="bi bi-apple"></i></div>
-            <h3>Nutrição Clínica</h3>
+            <h3>Nutrição Esportiva</h3>
             <p>Planejamento alimentar estratégico integrado ao seu cronograma de treino.</p>
           </div>
         </div>
@@ -141,118 +131,136 @@
     </div>
   </section>
 
-
-  <!-- Seção Fichas de Treino -->
-  <section id="fichas" style="background: linear-gradient(145deg, #141414a6, rgba(11, 11, 11, 0.512));">
+  <!-- Fichas de Treino -->
+  <section id="fichas" class="fichas-section">
     <div class="container">
-      <div class="row align-items-center g-5">
-        <div>
-          <h2 class="section-title text-start" style="font-size: 3.0rem;">VENHA MONTAR SUA<br><span
-              style="color: rgb(255, 24, 24, 0.507);" class="text-decoration-underline">FICHA DE TREINO</span>
-          </h2>
-          <p class="lead mb-2" style="color: #fff; font-size: 1.4rem;">Treinos periodizados e personalizados para cada
-            nível</p>
-          <p class="text-cinza mb-4" style="font-size: 1.1rem; line-height: 1.8;">
-            Desenvolvemos fichas de treino completas baseadas na ciência do esporte e na experiência de mais de 10 anos
-            com atletas e alunos. Cada ficha é cuidadosamente estruturada para maximizar seus resultados, seja você
-            iniciante ou avançado.
+      <div class="row align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-title">VENHA MONTAR SUA <br><span class="text-red text-decoration-underline">FICHA DE TREINO</span></h2>
+          <p class="fichas-subtitle">Treinos periodizados e personalizados para cada nível</p>
+          <p class="fichas-text">
+            Desenvolvemos fichas de treino completas baseadas na ciência do esporte e na experiência com 
+            nossos atletas e alunos. Cada ficha é cuidadosamente estruturada para maximizar seus resultados.
           </p>
 
-          <div class="row mb-4">
-            <div class="col-6">
-              <div class="d-flex align-items-center mb-3">
-                <i class="bi bi-check-circle-fill me-3" style="color: rgba(255, 30, 30, 0.507); font-size: 1.5rem;"></i>
+          <div class="row g-4 my-4 text-start">
+            <div class="col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill text-red me-3"></i>
                 <div>
-                  <h6 class="fw-bold mb-0">Periodização</h6>
-                  <small class="text-cinza">Científica</small>
+                  <h6 class="fw-bold mb-0">Periodização Científica</h6>
+                  <small>Método comprovado</small>
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="d-flex align-items-center mb-3">
-                <i class="bi bi-check-circle-fill me-3" style="color: rgba(255, 30, 30, 0.507); font-size: 1.5rem;"></i>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill text-red me-3"></i>
                 <div>
-                  <h6 class="fw-bold mb-0">Exercícios</h6>
-                  <small class="text-cinza">Demonstrados</small>
+                  <h6 class="fw-bold mb-0">Direcionamento alimentar</h6>
+                  <small>Dietas realistas e balanceadas</small>
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="d-flex align-items-center mb-3">
-                <i class="bi bi-check-circle-fill me-3" style="color: rgba(255, 30, 30, 0.507); font-size: 1.5rem;"></i>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill text-red me-3"></i>
                 <div>
-                  <h6 class="fw-bold mb-0">Controle de</h6>
-                  <small class="text-cinza">Carga e Volume</small>
+                  <h6 class="fw-bold mb-0">Controle de Carga</h6>
+                  <small>Volume progressivo</small>
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="d-flex align-items-center mb-3">
-                <i class="bi bi-check-circle-fill me-3" style="color: rgba(255, 30, 30, 0.507); font-size: 1.5rem;"></i>
+            <div class="col-md-6">
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill text-red me-3"></i>
                 <div>
                   <h6 class="fw-bold mb-0">Acompanhamento</h6>
-                  <small class="text-cinza">de Resultados</small>
+                  <small>Resultados mensuráveis</small>
                 </div>
               </div>
             </div>
           </div>
-
-          <a href="fichas.html" class="btn-ficha-intro">
-            <span>VER TODAS AS FICHAS</span>
-            <i class="bi bi-arrow-right"></i>
-          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contato -->
-  <section id="contato">
+  <section id="contato" class="contato-section">
     <div class="container">
       <h2 class="section-title">CONTATO</h2>
-      <div class="col-lg-6 mx-auto">
-        <div class="info-box">
-          <h4 class="fw-bold mb-4">Informações de contato</h4>
-          <p><i class="bi bi-geo-alt-fill me-2"></i> Av. Paulista, 1500 - Bom Jesus/RN</p>
-          <p><i class="bi bi-telephone-fill me-2"></i> (11) 99999-1234</p>
-          <p><i class="bi bi-envelope-fill me-2"></i> email@gmail.com</p>
-          <p><i class="bi bi-clock-fill me-2"></i> Seg a Sex: 6h - 22h | Sáb: 8h - 14h</p>
-          <div class="social-icons mx-auto text-center">
-            <a><i class="bi bi-instagram"></i></a>
-            <a><i class="bi bi-facebook"></i></a>
-            <a><i class="bi bi-whatsapp"></i></a>
-            <a><i class="bi bi-youtube"></i></a>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contato-card">
+            <h4 class="fw-bold mb-4 text-center">Informações de Contato</h4>
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start">
+                <h5><i class="bi bi-person-fill me-2 text-red"></i>Rafael Mendes</h5>
+                <p><i class="bi bi-whatsapp me-2 text-red"></i> (84) 9XXXX-XXXX</p>
+                <small class="text-muted">Biomecânica e TAF</small>
+              </div>
+              <div class="col-md-6 text-center text-md-start mt-3 mt-md-0">
+                <h5><i class="bi bi-person-fill me-2 text-red"></i>Alan Ferreira</h5>
+                <p><i class="bi bi-whatsapp me-2 text-red"></i> (84) 9XXXX-XXXX</p>
+                <small class="text-muted">Nutrição e Estratégia</small>
+              </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <p class="text-center mb-0">
+              <i class="bi bi-clock-fill me-2 text-red"></i> 
+              Seg a Sex: 6h - 20h | Sáb: 8h - 14h
+            </p>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container text-center">
-      <p class="mb-0">© 2026 <span style="color: red;">TORQLAB.</span>Todos os direitos reservados.</p>
-      <p class="mt-2 small">Desenvolvido por <a class="text-decoration-none text-white"
-          href="https://www.instagram.com/cavaleiro.grafico?igsh=MXFna2k3emRtOHdjaw==">@cavaleirografico
-        </a></p>
+      <p class="mb-0">© 2026 <span class="text-red fw-bold">TORQ LAB.</span> Todos os direitos reservados.</p>
+      <p class="mt-2 small">
+        Desenvolvido por 
+        <a href="https://www.instagram.com/cavaleiro.grafico" target="_blank" rel="noopener noreferrer" class="footer-link">
+          @cavaleirografico
+        </a>
+      </p>
     </div>
   </footer>
 
-  <!-- Seta -->
-  <button id="backToTop" title="Voltar ao topo"><i class="bi bi-arrow-up-short"></i></button>
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
   <script>
-    // Seta
-    const backToTop = document.getElementById('backToTop');
+    const backToTopBtn = document.getElementById('backToTop');
+    
     window.addEventListener('scroll', () => {
-      backToTop.style.display = window.scrollY > 300 ? 'flex' : 'none';
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
     });
-    backToTop.addEventListener('click', () => {
+    
+    backToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
     });
   </script>
 </body>

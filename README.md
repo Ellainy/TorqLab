@@ -26,8 +26,7 @@ Landing page profissional desenvolvida para o TORQ LAB, um estúdio de personal 
 
 - **CSS3** - Estilização avançada com variáveis e animações
 
-- **Bootstrap 5.3** - F
-ramework CSS para grid e componentes responsivos
+- **Bootstrap 5.3** - Framework CSS para grid e componentes responsivos
 
 - **Bootstrap Icons** - Ícones modernos e personalizáveis
 
